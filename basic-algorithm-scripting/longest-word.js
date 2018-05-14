@@ -2,7 +2,8 @@ function findLongestWord(str) {
   let arr = str.split(' ');
   let count = 0;
   arr.forEach((word) => {
-    count = (word.length > count) ? word.length : count;
+    let wordLen = word.length;
+    count = (wordLen > count) ? wordLen : count;
   });
   return count;
 }
